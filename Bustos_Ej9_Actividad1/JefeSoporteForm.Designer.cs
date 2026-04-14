@@ -34,21 +34,21 @@
             DescripcionProblemaTextBox = new TextBox();
             ObservacionesLabel = new Label();
             DescripcionProblemaLabel = new Label();
+            label1 = new Label();
+            EstadoLabel = new Label();
             TipoProblemaComboBox = new ComboBox();
             TipoProblemaLabel = new Label();
             NumeroTicketLabel = new Label();
-            label1 = new Label();
-            EstadoLabel = new Label();
             SatisfaccionGroupBox = new GroupBox();
             SatisfaccionComboBox = new ComboBox();
             label2 = new Label();
             ComentariosLabel = new Label();
             ComentariosTextBox = new TextBox();
             TiempoRespuestaGroupBox = new GroupBox();
-            FechaCreacionLabel = new Label();
-            FechaCreacionDateTimePicker = new DateTimePicker();
-            FechaResolucionLabel = new Label();
             FechaResolucionDateTimePicker = new DateTimePicker();
+            FechaResolucionLabel = new Label();
+            FechaCreacionDateTimePicker = new DateTimePicker();
+            FechaCreacionLabel = new Label();
             AceptarButton = new Button();
             DetalleTicketGroupBox.SuspendLayout();
             SatisfaccionGroupBox.SuspendLayout();
@@ -115,6 +115,24 @@
             DescripcionProblemaLabel.TabIndex = 11;
             DescripcionProblemaLabel.Text = "Descripción de problema";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(9, 291);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Resuelto";
+            // 
+            // EstadoLabel
+            // 
+            EstadoLabel.AutoSize = true;
+            EstadoLabel.Location = new Point(9, 271);
+            EstadoLabel.Name = "EstadoLabel";
+            EstadoLabel.Size = new Size(54, 20);
+            EstadoLabel.TabIndex = 12;
+            EstadoLabel.Text = "Estado";
+            // 
             // TipoProblemaComboBox
             // 
             TipoProblemaComboBox.FormattingEnabled = true;
@@ -141,24 +159,6 @@
             NumeroTicketLabel.Size = new Size(127, 20);
             NumeroTicketLabel.TabIndex = 0;
             NumeroTicketLabel.Text = "Número de Ticket";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(9, 291);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 20);
-            label1.TabIndex = 13;
-            label1.Text = "Resuelto";
-            // 
-            // EstadoLabel
-            // 
-            EstadoLabel.AutoSize = true;
-            EstadoLabel.Location = new Point(9, 271);
-            EstadoLabel.Name = "EstadoLabel";
-            EstadoLabel.Size = new Size(54, 20);
-            EstadoLabel.TabIndex = 12;
-            EstadoLabel.Text = "Estado";
             // 
             // SatisfaccionGroupBox
             // 
@@ -221,21 +221,12 @@
             TiempoRespuestaGroupBox.TabStop = false;
             TiempoRespuestaGroupBox.Text = "Tiempo de respuesta";
             // 
-            // FechaCreacionLabel
+            // FechaResolucionDateTimePicker
             // 
-            FechaCreacionLabel.AutoSize = true;
-            FechaCreacionLabel.Location = new Point(9, 37);
-            FechaCreacionLabel.Name = "FechaCreacionLabel";
-            FechaCreacionLabel.Size = new Size(189, 20);
-            FechaCreacionLabel.TabIndex = 17;
-            FechaCreacionLabel.Text = "Fecha de creación de ticket";
-            // 
-            // FechaCreacionDateTimePicker
-            // 
-            FechaCreacionDateTimePicker.Location = new Point(9, 60);
-            FechaCreacionDateTimePicker.Name = "FechaCreacionDateTimePicker";
-            FechaCreacionDateTimePicker.Size = new Size(275, 27);
-            FechaCreacionDateTimePicker.TabIndex = 18;
+            FechaResolucionDateTimePicker.Location = new Point(9, 136);
+            FechaResolucionDateTimePicker.Name = "FechaResolucionDateTimePicker";
+            FechaResolucionDateTimePicker.Size = new Size(275, 27);
+            FechaResolucionDateTimePicker.TabIndex = 20;
             // 
             // FechaResolucionLabel
             // 
@@ -246,12 +237,21 @@
             FechaResolucionLabel.TabIndex = 19;
             FechaResolucionLabel.Text = "Fecha de resolución de ticket";
             // 
-            // FechaResolucionDateTimePicker
+            // FechaCreacionDateTimePicker
             // 
-            FechaResolucionDateTimePicker.Location = new Point(9, 136);
-            FechaResolucionDateTimePicker.Name = "FechaResolucionDateTimePicker";
-            FechaResolucionDateTimePicker.Size = new Size(275, 27);
-            FechaResolucionDateTimePicker.TabIndex = 20;
+            FechaCreacionDateTimePicker.Location = new Point(9, 60);
+            FechaCreacionDateTimePicker.Name = "FechaCreacionDateTimePicker";
+            FechaCreacionDateTimePicker.Size = new Size(275, 27);
+            FechaCreacionDateTimePicker.TabIndex = 18;
+            // 
+            // FechaCreacionLabel
+            // 
+            FechaCreacionLabel.AutoSize = true;
+            FechaCreacionLabel.Location = new Point(9, 37);
+            FechaCreacionLabel.Name = "FechaCreacionLabel";
+            FechaCreacionLabel.Size = new Size(189, 20);
+            FechaCreacionLabel.TabIndex = 17;
+            FechaCreacionLabel.Text = "Fecha de creación de ticket";
             // 
             // AceptarButton
             // 
@@ -272,7 +272,7 @@
             Controls.Add(SatisfaccionGroupBox);
             Controls.Add(DetalleTicketGroupBox);
             Name = "JefeSoporteForm";
-            Text = "JefeSoporteForm";
+            Text = "Evaluación tickets (Jefe de soporte)";
             DetalleTicketGroupBox.ResumeLayout(false);
             DetalleTicketGroupBox.PerformLayout();
             SatisfaccionGroupBox.ResumeLayout(false);

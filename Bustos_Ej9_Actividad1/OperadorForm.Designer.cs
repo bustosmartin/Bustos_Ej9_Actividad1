@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             DetalleTicketGroupBox = new GroupBox();
-            NumeroTicketLabel = new Label();
-            TipoProblemaLabel = new Label();
-            TipoProblemaComboBox = new ComboBox();
-            DescripcionProblemaLabel = new Label();
-            DescripcionProblemaTextBox = new TextBox();
-            DetallesTecnicoGrupoBox = new GroupBox();
-            NombreTecnicoLabel = new Label();
-            ApellidoTecnicoLabel = new Label();
-            NombreTecnicoTextBox = new TextBox();
             NumeroTicketTextBox = new TextBox();
-            ApellidoTecnicoTextBox = new TextBox();
-            LegajoLabel = new Label();
+            DescripcionProblemaTextBox = new TextBox();
+            DescripcionProblemaLabel = new Label();
+            TipoProblemaComboBox = new ComboBox();
+            TipoProblemaLabel = new Label();
+            NumeroTicketLabel = new Label();
+            DetallesTecnicoGrupoBox = new GroupBox();
             textBox1 = new TextBox();
+            LegajoLabel = new Label();
+            ApellidoTecnicoTextBox = new TextBox();
+            NombreTecnicoTextBox = new TextBox();
+            ApellidoTecnicoLabel = new Label();
+            NombreTecnicoLabel = new Label();
             CancelarButton = new Button();
             AsignarButton = new Button();
             DetalleTicketGroupBox.SuspendLayout();
@@ -63,32 +63,20 @@
             DetalleTicketGroupBox.TabStop = false;
             DetalleTicketGroupBox.Text = "Detalle ticket";
             // 
-            // NumeroTicketLabel
+            // NumeroTicketTextBox
             // 
-            NumeroTicketLabel.AutoSize = true;
-            NumeroTicketLabel.Location = new Point(9, 31);
-            NumeroTicketLabel.Name = "NumeroTicketLabel";
-            NumeroTicketLabel.Size = new Size(127, 20);
-            NumeroTicketLabel.TabIndex = 0;
-            NumeroTicketLabel.Text = "Número de Ticket";
+            NumeroTicketTextBox.Location = new Point(6, 63);
+            NumeroTicketTextBox.Name = "NumeroTicketTextBox";
+            NumeroTicketTextBox.Size = new Size(394, 27);
+            NumeroTicketTextBox.TabIndex = 13;
             // 
-            // TipoProblemaLabel
+            // DescripcionProblemaTextBox
             // 
-            TipoProblemaLabel.AutoSize = true;
-            TipoProblemaLabel.Location = new Point(9, 110);
-            TipoProblemaLabel.Name = "TipoProblemaLabel";
-            TipoProblemaLabel.Size = new Size(129, 20);
-            TipoProblemaLabel.TabIndex = 9;
-            TipoProblemaLabel.Text = "Tipo de problema";
-            // 
-            // TipoProblemaComboBox
-            // 
-            TipoProblemaComboBox.FormattingEnabled = true;
-            TipoProblemaComboBox.Items.AddRange(new object[] { "Hardware", "Software", "Red", "Otro" });
-            TipoProblemaComboBox.Location = new Point(9, 143);
-            TipoProblemaComboBox.Name = "TipoProblemaComboBox";
-            TipoProblemaComboBox.Size = new Size(391, 28);
-            TipoProblemaComboBox.TabIndex = 10;
+            DescripcionProblemaTextBox.Location = new Point(6, 225);
+            DescripcionProblemaTextBox.Name = "DescripcionProblemaTextBox";
+            DescripcionProblemaTextBox.ReadOnly = true;
+            DescripcionProblemaTextBox.Size = new Size(394, 27);
+            DescripcionProblemaTextBox.TabIndex = 12;
             // 
             // DescripcionProblemaLabel
             // 
@@ -99,13 +87,32 @@
             DescripcionProblemaLabel.TabIndex = 11;
             DescripcionProblemaLabel.Text = "Descripción de problema";
             // 
-            // DescripcionProblemaTextBox
+            // TipoProblemaComboBox
             // 
-            DescripcionProblemaTextBox.Location = new Point(6, 225);
-            DescripcionProblemaTextBox.Name = "DescripcionProblemaTextBox";
-            DescripcionProblemaTextBox.ReadOnly = true;
-            DescripcionProblemaTextBox.Size = new Size(394, 27);
-            DescripcionProblemaTextBox.TabIndex = 12;
+            TipoProblemaComboBox.FormattingEnabled = true;
+            TipoProblemaComboBox.Items.AddRange(new object[] { "Hardware", "Software", "Red", "Otro" });
+            TipoProblemaComboBox.Location = new Point(9, 143);
+            TipoProblemaComboBox.Name = "TipoProblemaComboBox";
+            TipoProblemaComboBox.Size = new Size(391, 28);
+            TipoProblemaComboBox.TabIndex = 10;
+            // 
+            // TipoProblemaLabel
+            // 
+            TipoProblemaLabel.AutoSize = true;
+            TipoProblemaLabel.Location = new Point(9, 110);
+            TipoProblemaLabel.Name = "TipoProblemaLabel";
+            TipoProblemaLabel.Size = new Size(129, 20);
+            TipoProblemaLabel.TabIndex = 9;
+            TipoProblemaLabel.Text = "Tipo de problema";
+            // 
+            // NumeroTicketLabel
+            // 
+            NumeroTicketLabel.AutoSize = true;
+            NumeroTicketLabel.Location = new Point(9, 31);
+            NumeroTicketLabel.Name = "NumeroTicketLabel";
+            NumeroTicketLabel.Size = new Size(127, 20);
+            NumeroTicketLabel.TabIndex = 0;
+            NumeroTicketLabel.Text = "Número de Ticket";
             // 
             // DetallesTecnicoGrupoBox
             // 
@@ -122,46 +129,12 @@
             DetallesTecnicoGrupoBox.TabStop = false;
             DetallesTecnicoGrupoBox.Text = "Detalles técnico";
             // 
-            // NombreTecnicoLabel
+            // textBox1
             // 
-            NombreTecnicoLabel.AutoSize = true;
-            NombreTecnicoLabel.Location = new Point(8, 105);
-            NombreTecnicoLabel.Name = "NombreTecnicoLabel";
-            NombreTecnicoLabel.Size = new Size(64, 20);
-            NombreTecnicoLabel.TabIndex = 1;
-            NombreTecnicoLabel.Text = "Nombre";
-            // 
-            // ApellidoTecnicoLabel
-            // 
-            ApellidoTecnicoLabel.AutoSize = true;
-            ApellidoTecnicoLabel.Location = new Point(6, 182);
-            ApellidoTecnicoLabel.Name = "ApellidoTecnicoLabel";
-            ApellidoTecnicoLabel.Size = new Size(66, 20);
-            ApellidoTecnicoLabel.TabIndex = 2;
-            ApellidoTecnicoLabel.Text = "Apellido";
-            // 
-            // NombreTecnicoTextBox
-            // 
-            NombreTecnicoTextBox.Location = new Point(6, 139);
-            NombreTecnicoTextBox.Name = "NombreTecnicoTextBox";
-            NombreTecnicoTextBox.ReadOnly = true;
-            NombreTecnicoTextBox.Size = new Size(394, 27);
-            NombreTecnicoTextBox.TabIndex = 13;
-            // 
-            // NumeroTicketTextBox
-            // 
-            NumeroTicketTextBox.Location = new Point(6, 63);
-            NumeroTicketTextBox.Name = "NumeroTicketTextBox";
-            NumeroTicketTextBox.Size = new Size(394, 27);
-            NumeroTicketTextBox.TabIndex = 13;
-            // 
-            // ApellidoTecnicoTextBox
-            // 
-            ApellidoTecnicoTextBox.Location = new Point(4, 205);
-            ApellidoTecnicoTextBox.Name = "ApellidoTecnicoTextBox";
-            ApellidoTecnicoTextBox.ReadOnly = true;
-            ApellidoTecnicoTextBox.Size = new Size(394, 27);
-            ApellidoTecnicoTextBox.TabIndex = 14;
+            textBox1.Location = new Point(6, 61);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(394, 27);
+            textBox1.TabIndex = 14;
             // 
             // LegajoLabel
             // 
@@ -172,12 +145,39 @@
             LegajoLabel.TabIndex = 15;
             LegajoLabel.Text = "Legajo";
             // 
-            // textBox1
+            // ApellidoTecnicoTextBox
             // 
-            textBox1.Location = new Point(6, 61);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(394, 27);
-            textBox1.TabIndex = 14;
+            ApellidoTecnicoTextBox.Location = new Point(4, 205);
+            ApellidoTecnicoTextBox.Name = "ApellidoTecnicoTextBox";
+            ApellidoTecnicoTextBox.ReadOnly = true;
+            ApellidoTecnicoTextBox.Size = new Size(394, 27);
+            ApellidoTecnicoTextBox.TabIndex = 14;
+            // 
+            // NombreTecnicoTextBox
+            // 
+            NombreTecnicoTextBox.Location = new Point(6, 139);
+            NombreTecnicoTextBox.Name = "NombreTecnicoTextBox";
+            NombreTecnicoTextBox.ReadOnly = true;
+            NombreTecnicoTextBox.Size = new Size(394, 27);
+            NombreTecnicoTextBox.TabIndex = 13;
+            // 
+            // ApellidoTecnicoLabel
+            // 
+            ApellidoTecnicoLabel.AutoSize = true;
+            ApellidoTecnicoLabel.Location = new Point(6, 182);
+            ApellidoTecnicoLabel.Name = "ApellidoTecnicoLabel";
+            ApellidoTecnicoLabel.Size = new Size(66, 20);
+            ApellidoTecnicoLabel.TabIndex = 2;
+            ApellidoTecnicoLabel.Text = "Apellido";
+            // 
+            // NombreTecnicoLabel
+            // 
+            NombreTecnicoLabel.AutoSize = true;
+            NombreTecnicoLabel.Location = new Point(8, 105);
+            NombreTecnicoLabel.Name = "NombreTecnicoLabel";
+            NombreTecnicoLabel.Size = new Size(64, 20);
+            NombreTecnicoLabel.TabIndex = 1;
+            NombreTecnicoLabel.Text = "Nombre";
             // 
             // CancelarButton
             // 
@@ -208,7 +208,7 @@
             Controls.Add(DetallesTecnicoGrupoBox);
             Controls.Add(DetalleTicketGroupBox);
             Name = "OperadorForm";
-            Text = "OperadorForm";
+            Text = "Tickets a derivar (operador)";
             DetalleTicketGroupBox.ResumeLayout(false);
             DetalleTicketGroupBox.PerformLayout();
             DetallesTecnicoGrupoBox.ResumeLayout(false);

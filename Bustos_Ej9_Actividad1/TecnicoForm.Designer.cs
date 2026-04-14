@@ -176,7 +176,7 @@
             Controls.Add(ObservacionesLabel);
             Controls.Add(DetalleTicketGroupBox);
             Name = "TecnicoForm";
-            Text = "TecnicoForm";
+            Text = "Ticket a resolver (técnico)";
             DetalleTicketGroupBox.ResumeLayout(false);
             DetalleTicketGroupBox.PerformLayout();
             ResumeLayout(false);

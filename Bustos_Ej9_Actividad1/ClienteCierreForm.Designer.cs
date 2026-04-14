@@ -30,15 +30,15 @@
         {
             DetalleTicketGroupBox = new GroupBox();
             NumeroTicketTextBox = new TextBox();
+            ObservacionesTextBox = new TextBox();
             DescripcionProblemaTextBox = new TextBox();
+            ObservacionesLabel = new Label();
             DescripcionProblemaLabel = new Label();
+            label1 = new Label();
+            EstadoLabel = new Label();
             TipoProblemaComboBox = new ComboBox();
             TipoProblemaLabel = new Label();
             NumeroTicketLabel = new Label();
-            EstadoLabel = new Label();
-            label1 = new Label();
-            ObservacionesTextBox = new TextBox();
-            ObservacionesLabel = new Label();
             AceptarButton = new Button();
             ComentariosTextBox = new TextBox();
             ComentariosLabel = new Label();
@@ -75,6 +75,14 @@
             NumeroTicketTextBox.Size = new Size(394, 27);
             NumeroTicketTextBox.TabIndex = 13;
             // 
+            // ObservacionesTextBox
+            // 
+            ObservacionesTextBox.Location = new Point(9, 362);
+            ObservacionesTextBox.Name = "ObservacionesTextBox";
+            ObservacionesTextBox.ReadOnly = true;
+            ObservacionesTextBox.Size = new Size(389, 27);
+            ObservacionesTextBox.TabIndex = 16;
+            // 
             // DescripcionProblemaTextBox
             // 
             DescripcionProblemaTextBox.Location = new Point(6, 225);
@@ -82,6 +90,15 @@
             DescripcionProblemaTextBox.ReadOnly = true;
             DescripcionProblemaTextBox.Size = new Size(394, 27);
             DescripcionProblemaTextBox.TabIndex = 12;
+            // 
+            // ObservacionesLabel
+            // 
+            ObservacionesLabel.AutoSize = true;
+            ObservacionesLabel.Location = new Point(9, 339);
+            ObservacionesLabel.Name = "ObservacionesLabel";
+            ObservacionesLabel.Size = new Size(105, 20);
+            ObservacionesLabel.TabIndex = 15;
+            ObservacionesLabel.Text = "Observaciones";
             // 
             // DescripcionProblemaLabel
             // 
@@ -91,6 +108,24 @@
             DescripcionProblemaLabel.Size = new Size(177, 20);
             DescripcionProblemaLabel.TabIndex = 11;
             DescripcionProblemaLabel.Text = "Descripción de problema";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(9, 291);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Resuelto";
+            // 
+            // EstadoLabel
+            // 
+            EstadoLabel.AutoSize = true;
+            EstadoLabel.Location = new Point(9, 271);
+            EstadoLabel.Name = "EstadoLabel";
+            EstadoLabel.Size = new Size(54, 20);
+            EstadoLabel.TabIndex = 12;
+            EstadoLabel.Text = "Estado";
             // 
             // TipoProblemaComboBox
             // 
@@ -118,41 +153,6 @@
             NumeroTicketLabel.Size = new Size(127, 20);
             NumeroTicketLabel.TabIndex = 0;
             NumeroTicketLabel.Text = "Número de Ticket";
-            // 
-            // EstadoLabel
-            // 
-            EstadoLabel.AutoSize = true;
-            EstadoLabel.Location = new Point(9, 271);
-            EstadoLabel.Name = "EstadoLabel";
-            EstadoLabel.Size = new Size(54, 20);
-            EstadoLabel.TabIndex = 12;
-            EstadoLabel.Text = "Estado";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(9, 291);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 20);
-            label1.TabIndex = 13;
-            label1.Text = "Resuelto";
-            // 
-            // ObservacionesTextBox
-            // 
-            ObservacionesTextBox.Location = new Point(9, 362);
-            ObservacionesTextBox.Name = "ObservacionesTextBox";
-            ObservacionesTextBox.ReadOnly = true;
-            ObservacionesTextBox.Size = new Size(389, 27);
-            ObservacionesTextBox.TabIndex = 16;
-            // 
-            // ObservacionesLabel
-            // 
-            ObservacionesLabel.AutoSize = true;
-            ObservacionesLabel.Location = new Point(9, 339);
-            ObservacionesLabel.Name = "ObservacionesLabel";
-            ObservacionesLabel.Size = new Size(105, 20);
-            ObservacionesLabel.TabIndex = 15;
-            ObservacionesLabel.Text = "Observaciones";
             // 
             // AceptarButton
             // 
@@ -221,7 +221,7 @@
             Controls.Add(DetalleTicketGroupBox);
             Controls.Add(AceptarButton);
             Name = "ClienteCierreForm";
-            Text = "ClienteCierreForm";
+            Text = "Notificación de cierre de ticket (cliente)";
             DetalleTicketGroupBox.ResumeLayout(false);
             DetalleTicketGroupBox.PerformLayout();
             SatisfaccionGroupBox.ResumeLayout(false);
